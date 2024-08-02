@@ -42,7 +42,6 @@ main #firstSection {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  position: absolute;
 }
 main #firstSection div {
   background-color: #d9d9d9;
@@ -57,7 +56,92 @@ main #firstSection div {
 main #sectionImage {
   height: 507px;
 }
-main #socialMedia {
-  position: relative;
-  right: 10px;
+
+#socialMedia {
+  float: right;
+  margin-top: 140px;
+  position: sticky;
+  top: 160px;
+  width: 60px;
+}
+
+section#aggregateInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  gap: 3rem;
+  justify-content: space-evenly;
+  color: #fff;
+  margin: 3rem auto;
+}
+section#aggregateInfo div {
+  padding: 0 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: large;
+}
+
+section#personalInfo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #483eff;
+  width: 95%;
+  margin: 3rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+}
+section#personalInfo #links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div#links button {
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border: 2px solid #fff;
+  text-align: center;
+  background: transparent;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #fff;
+  font-size: larger;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+div#links button#info {
+  color: #000;
+  background-color: #bce0f6;
+  border: 0;
+}
+div#detailInfo {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+div#detailInfo div {
+  margin: 0.5rem;
+}
+
+div#detailInfo button {
+  float: inline-end;
+  padding: 1rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: large;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin: 3rem 0 0 0;
+}
+
+div#help {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 10;
 }
