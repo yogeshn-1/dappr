@@ -145,3 +145,45 @@ div#help {
   right: 25px;
   z-index: 10;
 }
+
+@media screen and (max-width: 1080px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #firstSection {
+    flex-direction: column;
+  }
+  section#aggregateInfo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  main #sectionImage {
+    margin: 0.5rem;
+    width: 90%;
+    height: auto;
+  }
+  section#personalInfo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #socialMedia {
+    display: none;
+  }
+  .header img#menu {
+    width: 30px;
+    height: auto;
+  }
+  .header img {
+    width: 60px;
+    height: auto;
+  }
+  .header {
+    justify-content: space-between;
+  }
+}
